@@ -52,6 +52,8 @@ services:
             MYSQL_DATABASE: Octopy
         networks:
             - core_service_network
+        volumes: 
+            - ./init:/docker-entrypoint-initdb.d
 
 networks:
     core_service_network:

@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 
 @Entity('users')
 export class User {
@@ -23,11 +23,11 @@ export class User {
     @Column()
     accepted_conditions_at: string;
 
-    @Column()
-    created_at: string;
+    @CreateDateColumn()
+    created_at: Date;
 
-    @Column()
-    updated_at: string;
+    @UpdateDateColumn()
+    updated_at: Date;
 
     @Column({ length: 40 })
     registration_method: string;

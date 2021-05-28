@@ -1,6 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn, OneToOne, JoinColumn } from 'typeorm';
-import { User } from '../../users/entities/user.entity'
-import { Company } from '../../companies/entities/company.entity'
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn  } from 'typeorm';
 
 @Entity('persons')
 export class Person {
@@ -22,9 +20,9 @@ export class Person {
     @Column()
     user_id: number;
 
-    @Column()
-    created_at: string;
+    @CreateDateColumn()
+    created_at: Date;
 
-    @Column()
-    updated_at: string;
+    @UpdateDateColumn()
+    updated_at: Date;
 }

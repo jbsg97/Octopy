@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/spyro97/Octopy.git" target="blank"><img src="https://i.ibb.co/Jd4twvW/ks-Plkjsl-400x400.png" width="320" alt="Octopy Logo" /></a>
+  <a href="https://github.com/spyro97/Octopy.git" target="blank"><img src="https://i.ibb.co/Lk0njXb/3678-logo-IJd-Tc4y2nxq-KLZjf.png" width="320" alt="Octopy Logo" /></a>
 </p>
 
 ## Description

@@ -37,4 +37,8 @@ export class UsersService {
   async remove(id: number) {
     return await this.usersRepository.delete(id);
   }
+
+  async findUserJwt(username: string) {
+    return await this.usersRepository.findOne({ where:{ email: username } })
+  }
 }
